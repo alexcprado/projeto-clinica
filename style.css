@@ -277,8 +277,8 @@ footer p {
 
     .banner {
         height: 85vh;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        object-fit: cover;
     }
 
     .texto-banner h1 {
