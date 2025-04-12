@@ -1,0 +1,266 @@
+.limitar-secao {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* texto antes da tabela */
+.link-antes-tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link-antes-tabela nav a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+    padding-bottom: 2px;
+    color: rgb(142, 139, 139);
+    font-weight: 700;
+    border-bottom: 3px solid rgb(28, 186, 189);
+}
+
+.titulo-antes-tabela {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(76, 74, 74);
+}
+
+.titulo-antes-tabela h2 {
+    font-weight: 700;
+}
+
+/* tabela */
+.texto-tabela {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-tabela h2 {
+    color: rgb(76, 74, 74);
+}
+
+.texto-tabela p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(156, 155, 155);
+    font-weight: 600;
+    width: 650px;
+    margin-bottom: 15px;
+}
+
+.conteudo-tabela {
+    display: flex;
+    width: 1450px;
+    margin: 1px auto;
+}
+
+.conteudo-tabela img {
+    width: 500px;
+}
+
+thead {
+    background-color: rgb(27, 214, 214);
+    color: white;
+    text-align: left;
+}
+
+th {
+    padding: 10px 233px 10px 10px;
+    font-size: 22px;
+}
+
+td {
+    padding-left: 10px;
+    color: rgb(142, 139, 139);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(212, 209, 209);
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: rgb(246, 242, 242);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* design responsivo */
+@media screen and (max-width: 425px) {
+    .link-antes-tabela {
+        width: 280px;
+    }
+
+    .link-antes-tabela nav {
+        text-align: center;
+        padding-right: 17px;
+    }
+
+    .link-antes-tabela nav a {
+        font-size: 11px;
+    }
+
+    .titulo-antes-tabela {
+        width: 300px   }
+
+    .titulo-antes-tabela h2 {
+        font-size: 18px;
+    }
+
+    .texto-tabela {
+        margin-top: 20px;
+    }
+
+    .texto-tabela h2 {
+        font-size: 17px;
+    }
+
+    .texto-tabela p {
+        font-size: 12px;
+        max-width: 300px;
+    }
+
+    .conteudo-tabela img {
+        width: 0;
+    }
+
+    .conteudo-tabela {
+        display: flex;
+        justify-content: center;
+        max-width: 280px;
+    }
+
+    table {
+        max-width: 425px;
+    }
+
+    th {
+        padding: 0;
+        width: 100%;
+        font-size: 10px;
+        padding-left: 10px ;
+        padding-right: 49px
+    }
+
+    td {
+        font-size: 8px;
+    }
+
+    /* rodapé */
+    footer div img {
+        width: 70px;
+        margin-top: 10px;
+    }
+
+    footer div p {
+        font-size: 8px;
+    }
+}
+
+@media  screen and (min-width: 426px) and (max-width: 768px) {
+    .link-antes-tabela {
+        width: 500px;
+    }
+
+    .link-antes-tabela nav a {
+        font-size: 15px;
+    }
+
+    .titulo-antes-tabela {
+        width: 500px;
+    }
+
+    .titulo-antes-tabela h2 {
+        font-size: 22px;
+    }
+
+    .texto-tabela h2 {
+        font-size: 23px;
+    }
+
+    .texto-tabela p {
+        font-size: 14px;
+        width: 500px;
+    }
+
+    .conteudo-tabela img {
+        width: 0;
+    }
+
+    .conteudo-tabela {
+        width: 500px;
+    }
+
+    table {
+        width: 2px;
+    }
+
+    th {
+        padding: 10px;
+        font-size: 14px;
+        padding-right: 110px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    footer div img {
+        width: 80px;
+    }
+
+    footer div p {
+        font-size: 10px;
+    }
+}
+
+@media  screen and (min-width: 769px)  and (max-width: 1024px) {
+    .link-antes-tabela {
+        width: 70%;
+    }
+
+    .titulo-antes-tabela {
+        width: 700px;
+    }
+
+    .conteudo-tabela {
+        width: 70%;
+    }
+
+    .conteudo-tabela img {
+        width: 250px;
+    }
+
+    th {
+        padding: 10px;
+    }
+
+    footer div {
+        width: 700px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1479px) {
+    .conteudo-tabela {
+        width: 960px;
+    }
+
+    th {
+        padding: 10px;
+        padding-right: 112px;
+    }
+
+    .conteudo-tabela img {
+        width: 370px;
+    }
+}

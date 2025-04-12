@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+}
+
+/* css topo */
+.topo {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo nav a {
+    padding-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.topo nav a:hover {
+    color: black;
+}
+
+.topo div img {
+    width: 130px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(27, 214, 214);
+}
+
+/* css conteúdo */
+
+/* banner */
+.banner {
+    background-image: url(/arquivos_download/Clinica/assets/recepcao.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-banner {
+    width: 1024px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.texto-banner h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+/* sobre */
+#sobre {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+#sobre h2 {
+    font-weight: 500;
+    text-align: center;
+    color: rgb(76, 74, 74);
+    margin-top: 35px;
+}
+
+#sobre p {
+    font-weight: 500;
+    color: rgb(142, 139, 139);
+    max-width: 600px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#sobre img {
+    height: 250px;
+    position: relative; 
+}
+
+.lista-sobre {
+    display: flex;
+}
+
+.conteudo-lista-sobre h3 {
+    font-weight: 500;
+    color: rgb(156, 155, 155);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.conteudo-lista-sobre li {
+    margin-left:40px;
+    padding-bottom: 5px;
+    color: rgb(142, 139, 139);
+}
+
+.conteudo-lista-sobre {
+   display: flex;
+   flex-direction: column;
+}
+
+/* especialidades */
+.especialidades {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.texto-especialidades {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.texto-especialidades h2 {
+    font-weight: 500;
+    color: rgb(76, 74, 74);
+    margin-bottom: 20px;
+}
+
+.texto-especialidades p {
+    font-weight: 500;
+    color: rgb(142, 139, 139);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card {
+    box-shadow: 1px 1px 20px rgb(156, 155, 155);
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 4px;
+    color: rgb(142, 139, 139);
+}
+
+.card img {
+    width: 320px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: rgb(27, 214, 214);
+    border: 0;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* contato */
+#contato {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-contato {
+    color: rgb(76, 74, 74);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.p-contato {
+    color: rgb(142, 139, 139);
+    text-align: center;
+    width: 600px;
+}
+
+.p-contato p {
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* rodapé */
+footer {
+    background-color: rgb(24, 113, 115);
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+footer div {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+footer img {
+    width: 130px;
+    margin: 20px 0;
+}
+
+footer p {
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+/* design responsivo */
+@media screen and (max-width: 425px) {
+    /* topo */
+    .topo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    .topo div img {
+        width: 80px;
+    }
+
+    .topo nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgb(41, 147, 149);
+        padding: 5px 50px 5px 50px;
+    }
+
+    .topo nav a {
+        font-size: 12px;
+    }
+
+    /* banner */
+.conteudo-banner {
+    width: 400px;
+}
+
+    .banner {
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .texto-banner h1 {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    /* sobre */
+    #sobre {
+        max-width: 280px; 
+    }
+
+    #sobre div h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #sobre div p {
+        font-size: 17px;
+    }
+
+    .lista-sobre img {
+        width: 0;
+    }
+
+    .conteudo-lista-sobre h3 {
+        font-size: 14px;
+    }
+
+    .conteudo-lista-sobre ul {
+        font-size: 11px;
+    }
+
+    /* especialidades */
+    .especialidades {
+        max-width: 280px;
+    }
+
+    .texto-especialidades {
+        margin-top: 0;
+    }
+
+    .texto-especialidades h2 {
+        font-size: 18px;
+    }
+
+    .texto-especialidades p {
+        font-size: 15px;
+    }
+
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card img {
+        width: 250px;
+    }
+
+    .card p {
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* contato */
+    #contato {
+        max-width: 280px;
+    }
+
+    .titulo-contato h3 {
+        font-size: 16px;
+    }
+
+    .p-contato {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 12px;
+        max-width: 280px;
+    }
+
+    iframe {
+        max-width: 280px;
+        height: 280px;
+    }
+
+    /* rodapé */
+    footer div {
+        max-width: 280px;
+    }
+
+    footer div img {
+        width: 90px;
+    }
+
+    footer div p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    /* topo */
+    .topo {
+        max-width: 500px;
+    }
+
+    .topo div img {
+        width: 70px;
+        margin-left: 10px;
+    }
+
+    .topo nav a {
+        font-size: 11px;
+        }
+
+    .topo nav {
+        margin-right: 10px;
+    }
+
+    /* banner */
+    .banner {
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .texto-banner h1 {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+
+    /* sobre */
+    #sobre {
+        max-width: 500px;
+    }
+
+    #sobre h2 {
+        font-size: 18px;
+    }
+
+    #sobre p {
+        font-size: 11px;
+        max-width: 400px;
+    }
+
+    .lista-sobre img {
+        width: 0;
+    }
+
+    .conteudo-lista-sobre h3 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .conteudo-lista-sobre ul {
+        font-size: 12px;
+    }
+
+    /* especialidades */
+    .especialidades {
+        max-width: 500px;
+    }
+
+    .texto-especialidades {
+        margin-top: 0;
+    }
+
+    .texto-especialidades h2 {
+        font-size: 14px;
+    }
+
+    .texto-especialidades p {
+        font-size: 10px;
+    }
+
+    .container-cards {
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .card p {
+        font-size: 11px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    /* contato */
+    #contato {
+        max-width: 500px;
+    }
+
+    .titulo-contato {
+        font-size: 12px;
+    }
+
+    .p-contato {
+        font-size: 10px;
+        max-width: 377px;
+    }
+
+    iframe {
+        width: 95%;
+        height: 100vh;
+    }
+
+    /* rodapé */
+    footer div {
+        max-width: 500px;
+    }
+
+    footer div img {
+        width: 100px;
+    }
+
+    footer div p {
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* topo */
+    .topo {
+        max-width: 900px;
+    }
+
+    .topo div img {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .topo nav {
+        margin-right: 10px;
+    }
+
+    .topo nav a {
+        font-size: 16px;
+    }
+
+    /* banner */
+    .banner {
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        z-index: -1; 
+    }
+
+    .texto-banner h1 {
+        font-size: 34px;
+        margin-left: 10px;
+    }
+
+    /* sobre */
+    #sobre {
+        max-width: 900px;
+    }
+
+    #sobre div h2 {
+        font-size: 20px;
+    }
+
+    .lista-sobre img {
+        width: 200px;
+    }
+    /* especialidades */
+    .especialidades {
+        max-width: 900px;
+    }
+
+    .especialidades h2 {
+        font-size: 20px;
+    }
+
+    .container-cards {
+        max-width: 950px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card img {
+        width: 270px;
+    }
+
+    /* contato */
+
+
+    iframe {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .topo {
+        width: 100%;
+    }
+
+    .topo div img {
+        margin-left: 20px;
+    }
+
+    .topo nav {
+        margin-right: 20px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 91vh;
+    }
+
+    .texto-banner {
+        width: 100%;
+    }
+
+    .texto-banner h1 {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    #sobre {
+        width: 100%;
+    }
+
+
+    #sobre div h2 {
+        font-size: 34px;
+    }
+
+    #sobre div P {
+        font-size: 25px;
+        width: 1000px;;
+    }
+}
