@@ -276,9 +276,9 @@ footer p {
     /* banner */
 
     .banner {
+        width: 100% fit-content;
         height: 85vh;
-        background-size: contain;
-        object-fit: cover;
+        background-size: cover;
     }
 
     .texto-banner h1 {
