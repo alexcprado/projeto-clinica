@@ -46,7 +46,6 @@ header {
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .banner {
@@ -249,13 +248,13 @@ footer p {
 /* design responsivo */
 @media screen and (max-width: 425px) {
     /* topo */
+
     .topo {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        max-width: 280px;
     }
 
     .topo div img {
@@ -275,12 +274,8 @@ footer p {
     }
 
     /* banner */
-.conteudo-banner {
-    width: 400px;
-}
 
     .banner {
-        width: 100%;
         height: 85vh;
         background-size: cover;
         z-index: -1;
